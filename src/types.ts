@@ -1,7 +1,7 @@
 export interface ServiceDetail {
   id: string;
   title: string;
-  category: 'engineering' | 'drilling' | 'procurement' | 'marine' | 'construction' | 'maintenance';
+  category: 'engineering' | 'project-management' | 'procurement' | 'marine' | 'manpower';
   shortDesc: string;
   fullDesc: string;
   iconName: string;

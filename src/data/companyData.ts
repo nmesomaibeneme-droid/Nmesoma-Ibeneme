@@ -12,123 +12,66 @@ export const COMPANY_INFO = {
   vision: "To be a top global provider of oil and gas services, achieved by consistently delivering successful, safe, and innovative projects.",
   mission: "To offer satisfaction to our clients with a highly integrated, quality package of products and services, with strict adherence to environmental protection, health and safety, constantly utilising technology and local resources to improve service delivery.",
   serviceSpectrum: [
-    "Engineering", "Procurement", "Construction", 
-    "Installation", "Commissioning", "Operation", "Maintenance"
+    "Engineering Services",
+    "Project Management",
+    "Procurement",
+    "Marine Logistics",
+    "Manpower Solutions"
   ]
 };
 
 export const SERVICES: ServiceDetail[] = [
   {
-    id: "process-facility-engineering",
-    title: "Engineering Consulting & Design",
+    id: "engineering-services",
+    title: "Engineering Services",
     category: "engineering",
-    shortDesc: "Front-end (FEED) & detailed engineering, 3D modeling, flow assurance, and onshore/offshore pipeline design.",
-    fullDesc: "Complete process & facility engineering solutions from concept to detailed IFC drawings. Our technical experts execute front-end engineering design (FEED), debottlenecking, PDMS modeling, flow assurance, and pipeline integrity studies for onshore and offshore assets.",
+    shortDesc: "Front-end engineering design (FEED), detailed engineering, 3D modeling, flow assurance, and onshore/offshore pipeline design.",
+    fullDesc: "Complete process & facility engineering consulting and design solutions from concept to detailed IFC drawings. Our technical experts execute front-end engineering design (FEED), debottlenecking, PDMS 3D modeling, flow assurance, and pipeline integrity studies for onshore and offshore assets.",
     iconName: "Compass",
     capabilities: [
-      "Front-end engineering design (FEED) and detailed engineering",
-      "Debottlenecking and capacity review for operating assets",
-      "Development & maintenance of asset data management systems (facilities databases, PDMS 3D model)",
-      "Plan of Development assistance and cost estimation for lifecycle development",
-      "Value engineering & coordination with subsurface, drilling and operations teams",
-      "Process design, electrical, instrumentation, piping and 3D modeling",
-      "Flow assurance, mechanical design, and corrosion design",
-      "Onshore pipeline route selection, stability calculations, upheaval buckling & river crossing design",
-      "Offshore pipeline riser & crossing design, DLB suitability, mooring studies & stinger design"
+      "Front-end engineering design (FEED) and detailed engineering (IFC)",
+      "Debottlenecking and capacity review for operating upstream assets",
+      "Asset data management systems & PDMS 3D model development",
+      "Plan of Development (PoD) assistance and cost estimation",
+      "Process, electrical, instrumentation, piping & mechanical design",
+      "Flow assurance, thermal hydraulic design, and corrosion engineering",
+      "Onshore pipeline route selection, stability calculations & river crossing design",
+      "Offshore pipeline riser, crossing & mooring design"
     ]
   },
   {
-    id: "drilling-engineering",
-    title: "Drilling Engineering & Operations",
-    category: "drilling",
-    shortDesc: "End-to-end support across the well delivery lifecycle — from well planning to rig-site execution.",
-    fullDesc: "Disciplined support for oil and gas operators across the well delivery lifecycle. We ensure high safety standards, cost performance control, and seamless service company coordination during drilling and wellsite operations.",
-    iconName: "Drill",
-    activeEngagements: "Drilling Project Management Services — OML 65 (COPDC Petroleum Development)",
-    capabilities: [
-      "Well delivery planning & drilling programme development",
-      "Well design support — casing, tubular & drilling-fluid programmes",
-      "Rig selection, contracting & rig-readiness assurance",
-      "Drilling operations supervision, monitoring & daily reporting",
-      "Cost, schedule & drilling performance control",
-      "Service-company coordination & drilling logistics management"
-    ]
-  },
-  {
-    id: "engineering-project-management",
-    title: "Engineering Project Management",
-    category: "engineering",
-    shortDesc: "Disciplined management of engineering scope, quality, and interfaces from concept to issued-for-construction (IFC).",
-    fullDesc: "Comprehensive oversight of engineering deliverables, document control, and multi-disciplinary interface management to guarantee safety, quality, and strict regulatory compliance.",
+    id: "project-management",
+    title: "Project Management",
+    category: "project-management",
+    shortDesc: "Disciplined management of engineering scope, quality, schedule, and interfaces from concept to project closure.",
+    fullDesc: "Comprehensive oversight of engineering deliverables, document control, and multi-disciplinary interface management to guarantee safety, quality, budget adherence, and strict regulatory compliance.",
     iconName: "Briefcase",
     capabilities: [
-      "Management of Concept, FEED & Detailed Design programmes",
-      "Interface management across engineering disciplines, vendors & contractors",
-      "Document control & engineering deliverables management",
+      "Management of Concept, FEED & Detailed Engineering programmes",
+      "Interface management across engineering disciplines, vendors & operators",
+      "Document control & engineering deliverables tracking",
       "Technical query resolution & Management of Change (MoC)",
-      "Constructability & value-engineering reviews",
-      "QA/QC oversight & regulatory compliance"
+      "Constructability, value engineering & risk mitigation reviews",
+      "QA/QC oversight & regulatory compliance management",
+      "Disciplined 5-Stage Delivery Framework: Initiation → Planning → Execution → Control → Closure"
     ],
     keyHighlights: [
       "Disciplined 5-Stage Framework: Initiation → Planning → Launch & Execution → Monitoring & Control → Project Closure"
     ]
   },
   {
-    id: "facilities-engineering-epc",
-    title: "Facilities Engineering & EPF Delivery",
-    category: "construction",
-    shortDesc: "Single-point accountability for new process facilities (EPF) and brownfield modifications.",
-    fullDesc: "Turnkey EPC delivery of Early Production Facilities (EPF), brownfield upgrades, construction supervision, pre-commissioning, commissioning, and operations readiness assurance.",
-    iconName: "Factory",
-    deliveredProjects: "Delivered 30,000 & 75,000 BPD 3-Phase Separators at Odidi Field & Jones Creek, OML 42",
-    capabilities: [
-      "EPC delivery of new & Early Production Facilities (EPF)",
-      "Brownfield upgrades & modification of existing process facilities",
-      "Construction supervision, progress measurement & control",
-      "Pre-commissioning, commissioning & start-up management",
-      "Interface management with operations & third parties",
-      "Handover, close-out & operations-readiness assurance"
-    ]
-  },
-  {
-    id: "pressure-vessels-fabrication",
-    title: "Pressure Vessels Design & Fabrication",
-    category: "construction",
-    shortDesc: "In-house design and fabrication of production separators (3-phase) and custom vessel internals.",
-    fullDesc: "Expert design, fabrication, and commissioning of high-capacity production separators and pressure vessels. Includes in-house engineering of high-efficiency vessel internals for separation and water treatment.",
-    iconName: "Cylinder",
-    deliveredProjects: "30,000 BPD & 75,000 BPD 3-Phase Separators designed, installed and commissioned for Odidi Field & Jones Creek (OML 42)",
-    internalsDesigned: [
-      "Coalescing Plates",
-      "Weir Plates",
-      "Inlet Diverters",
-      "Gas Straightening Devices",
-      "Vortex Breakers",
-      "Wave Breakers / Inlet Distribution Plates",
-      "Mist Eliminators",
-      "Defoaming Plates",
-      "Sand Jetting Systems"
-    ],
-    capabilities: [
-      "Custom 2-phase and 3-phase production separator design & fabrication",
-      "ASME code compliant vessel engineering & structural skid fabrication",
-      "Specialized vessel internals design for enhanced separation efficiency",
-      "Pre-commissioning, factory acceptance testing & site installation"
-    ]
-  },
-  {
     id: "technical-industrial-procurement",
-    title: "Technical & Industrial Procurement",
+    title: "Procurement & Strategic Sourcing",
     category: "procurement",
-    shortDesc: "Global supply chain solutions sourcing high-spec pipes, fittings, OCTG, valves, and safety wear.",
-    fullDesc: "Competitive worldwide sourcing backing clients through dedicated procurement services. We supplement internal procurement departments across strategic planning, supplier rationalization, and negotiation.",
+    shortDesc: "Global supply chain solutions sourcing high-spec pipes, fittings, OCTG tubulars, valves, and safety wear.",
+    fullDesc: "Competitive worldwide sourcing backing clients through dedicated procurement services. We supplement internal procurement departments across strategic planning, supplier rationalization, material inspection, and international logistics.",
     iconName: "ShoppingCart",
     capabilities: [
-      "Pipes and fittings (High-pressure carbon steel, stainless & alloy)",
+      "High-pressure carbon steel, stainless steel & alloy pipes and fittings",
       "Oil Country Tubular Goods (OCTG casing and tubing)",
-      "Valves — Ball, Globe, Check, Needle, Gate & control valves",
-      "Valves repairs, servicing & remanufacturing",
-      "Personal Protective Equipment (PPE), safety wear & industrial gadgets",
+      "Valves — Ball, Gate, Globe, Check, Needle & automated control valves",
+      "Valve servicing, recalibration & technical remanufacturing",
+      "Personal Protective Equipment (PPE), safety gear & industrial instrumentation",
       "Supplier rationalization, strategic sourcing & international logistics"
     ]
   },
@@ -136,56 +79,32 @@ export const SERVICES: ServiceDetail[] = [
     id: "marine-logistics-offshore-support",
     title: "Marine Logistics & Offshore Support",
     category: "marine",
-    shortDesc: "Owned fleet of barges, tugboats, and houseboats supplying prompt oilfield support across Nigerian waters.",
-    fullDesc: "Prompt and reliable marine support backing oilfield operations with our owned fleet of fuel barges, ramp barges, high-horsepower tugboats, and offshore accommodation houseboats.",
+    shortDesc: "Comprehensive offshore marine logistics, fuel bunkering, tugboat towing, and accommodation support across Nigerian waters.",
+    fullDesc: "Prompt and reliable marine support backing oilfield operations with specialized fuel barges, ramp barges, high-horsepower tugboats, and offshore accommodation houseboats.",
     iconName: "Ship",
     capabilities: [
-      "1,000 T Ramp Barge operations",
-      "800 T Ramp Barge transportation",
-      "1,200 T Fuel Barge supply",
-      "800 HP & 1,000 HP Tug Boat towing & maneuvering",
-      "60-Man Offshore Houseboat accommodation",
-      "Offshore materials, equipment transfer & swamp logistics support"
+      "Heavy deck cargo and ramp barge logistics operations",
+      "Offshore fuel supply, bunkering & fluid transportation",
+      "Tugboat towing, anchor handling & rig maneuvering support",
+      "Offshore accommodation houseboats for project crews",
+      "Offshore equipment transfer & swamp channel logistics support",
+      "Seasoned marine personnel & certified offshore safety crew"
     ]
   },
   {
-    id: "fabrication-construction-coating",
-    title: "Fabrication, Construction & Specialized Coating",
-    category: "construction",
-    shortDesc: "Civil, mechanical, electrical construction with specialized protective coating & fully equipped yards.",
-    fullDesc: "Comprehensive construction and fabrication services executed from our fully equipped yards at Igwuruta and Fortress Yard Port Harcourt. Includes specialized protective and inhibitive pipeline coatings.",
-    iconName: "HardHat",
-    yardFacilities: [
-      "Vessel Handlers & Heavy Skidding Systems",
-      "Cool-Cut Pipe Cutting Equipment",
-      "CNC Plate Cutting Machines",
-      "Plate Rolling to Pipe & Vessel Shapes",
-      "Heavy Turning Machines & Large-Plate Cutters",
-      "Fully Equipped Civil Construction Yard at Igwuruta"
-    ],
+    id: "manpower-solutions",
+    title: "Manpower Solutions & Technical Resourcing",
+    category: "manpower",
+    shortDesc: "Supply of qualified national and expatriate oilfield engineers, technical specialists, and project personnel.",
+    fullDesc: "End-to-end technical manpower solutions providing highly experienced engineering consultants, wellsite supervisors, subsea specialists, HSE officers, and project personnel for short-term and long-term oil & gas assignments.",
+    iconName: "Users",
     capabilities: [
-      "Civil construction: Site preparations, soil tests, concrete foundations, wire mesh, fencing & access roads",
-      "Mechanical & electrical installation works",
-      "Offshore and onshore installation and maintenance",
-      "Dredging, product storage & supplies and marine support services",
-      "Specialized protective, barrier, and inhibitive coatings",
-      "Offshore & onshore pipeline coating services"
-    ]
-  },
-  {
-    id: "facility-maintenance-cmms",
-    title: "Facility Maintenance (CMMS) & Training",
-    category: "maintenance",
-    shortDesc: "Computerised Maintenance Management Systems (CMMS) & specialized Oil & Gas technology training.",
-    fullDesc: "Deploying state-of-the-art Computerised Maintenance Management Systems (CMMS) for asset optimization and delivery of expert-led oil & gas technology training programs.",
-    iconName: "Wrench",
-    capabilities: [
-      "Asset tracking, plant scheduling & maintenance management",
-      "Facility management, job management & electronic forms (inspections/risk assessments)",
-      "Advanced contractor management, job requests, budgeting & costing",
-      "Basic operations skills & Process Certified Operator training",
-      "Advanced 3-Phase Separator technical training by national & expatriate experts",
-      "Introduction to Oil & Gas Industry & executive soft skills training"
+      "Technical staffing & expatriate/national engineering placement",
+      "Drilling, subsea, pipeline & process engineering consultants",
+      "Onshore & offshore construction supervisors & QA/QC inspectors",
+      "HSE managers, safety officers & environmental compliance specialists",
+      "Payroll management, logistics support & crew mobilization",
+      "Competency assessment, recruitment & contract workforce management"
     ]
   }
 ];
@@ -340,23 +259,23 @@ export const PROJECT_FRAMEWORK = [
 
 export const WHY_MH_JESSE = [
   {
-    title: "Design & Fabrication",
-    desc: "Proven in-house experience in pressure-vessel, separator internals, and facility design and fabrication."
+    title: "Engineering Services",
+    desc: "Front-end engineering (FEED), detailed design, flow assurance, and pipeline engineering excellence."
   },
   {
-    title: "Installation to Start-Up",
-    desc: "Complete hands-on installation support, pre-commissioning, commissioning, and plant start-up experience."
+    title: "Disciplined Project Management",
+    desc: "Single-point accountability and structured project management frameworks ensuring schedule and budget control."
   },
   {
-    title: "Operations & Maintenance",
-    desc: "Hands-on O&M and CMMS maintenance management experience across major Nigerian oil & gas assets."
+    title: "Global Technical Procurement",
+    desc: "Worldwide supply chain solutions delivering high-grade OCTG tubulars, piping, valves, and safety wear."
   },
   {
-    title: "Turn-Key EPC Delivery",
-    desc: "Single accountable partner for end-to-end turn-key project execution with strict QHSE compliance."
+    title: "Offshore Marine Support",
+    desc: "Prompt offshore marine logistics, cargo transport, bunkering support, and swamp operations across West African waters."
   },
   {
-    title: "Local Market Insight",
-    desc: "100% Nigerian content compliance with profound understanding of the West African oil & gas landscape."
+    title: "Qualified Manpower Solutions",
+    desc: "Fast mobilization of experienced national and expatriate oilfield engineers, supervisors, and project personnel."
   }
 ];

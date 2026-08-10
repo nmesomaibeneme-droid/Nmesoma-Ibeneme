@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ServicesSection } from './components/ServicesSection';
-import { MarineFleetSection } from './components/MarineFleetSection';
-import { TrackRecordSection } from './components/TrackRecordSection';
+import { OperationalExcellenceSection } from './components/OperationalExcellenceSection';
 import { WhyMHJesse } from './components/WhyMHJesse';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
@@ -36,11 +35,8 @@ export default function App() {
         {/* Core Services Section - Primary Selling Focus */}
         <ServicesSection onRequestQuote={handleOpenQuote} />
 
-        {/* Owned Marine Fleet & Offshore Equipment */}
-        <MarineFleetSection onRequestQuote={handleOpenQuote} />
-
-        {/* Proven Track Record & Executed Projects */}
-        <TrackRecordSection />
+        {/* Safety, Quality Governance & Local Content Framework */}
+        <OperationalExcellenceSection onRequestQuote={handleOpenQuote} />
 
         {/* Value Proposition & 5-Stage Delivery Framework */}
         <WhyMHJesse />
